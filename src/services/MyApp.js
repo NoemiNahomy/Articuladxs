@@ -148,7 +148,6 @@ export default class MyApp {
           elemMenu.classList.add('menu-selected');
           // Load the selected city
           this.myMap.mapTo(city.center);
-
         }
       }
     }
