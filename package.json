@@ -2,9 +2,9 @@
   "name": "articuladxs",
   "version": "1.0.0",
   "description": "Articuladxs",
-  "main": "src/index.html",
+  "main": "docs/index.html",
   "scripts": {
-    "start": "parcel src/index.html --open",
+    "start": "parcel docs/index.html --open",
     "build": "parcel build src/index.html --out-dir docs --public-url ./",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
