@@ -2,13 +2,12 @@
 
 import MyMap from './MyMap';
 import GeojsonService from './GeojsonService';
-import ChartService from './ChartService';
 import * as constants from './Constants';
 
 export default class MyApp {
   constructor() {
     this.myMap = new MyMap();
-    this.chartService = new ChartService();
+
     this.isMobile = this.isMobileDevice();
     this.currentLang = this.addText();
     this.openToggleMenu = false;
@@ -17,11 +16,10 @@ export default class MyApp {
       : '';
 
     this.menuListELem = document.getElementById('menu-list');
-    this.panelListELem = document.getElementById('ciudades-list');
+    this.panelListELem = document.getElementById('colectivas-list');
   }
 
   startApp() {
-    this.chartService.initChart();
     this.initDataList();
 
     const toggleMenu = document.getElementById('my-toggle-menu');
@@ -110,17 +108,9 @@ export default class MyApp {
           const prevElem = document.getElementsByClassName('selected');
           if (prevElem.length !== 0) prevElem[0].classList.remove('selected');
           elem.classList.add('selected');
-
           this.myMap.mapTo(city.center);
-          this.chartService.loadChart(
-            city.datos,
-            city.name,
-            constants.lang[this.currentLang].chartTxt,
-          );
-          this.chartService.showChart();
         };
 
-        // elemMenu.onclick = this.doElemMenuClick.bind(elemMenu, city);
         elemMenu.onclick = () => {
           const prevElemMenu = document.getElementsByClassName('menu-selected');
           if (prevElemMenu.length !== 0) {
@@ -137,12 +127,6 @@ export default class MyApp {
           this.openToggleMenu = false;
 
           this.myMap.mapTo(city.center);
-          this.chartService.loadChart(
-            city.datos,
-            city.name,
-            constants.lang[this.currentLang].chartTxt,
-          );
-          this.chartService.showChart();
         };
 
         elem.addEventListener('mouseenter', this.addBackgroundColor);
@@ -164,12 +148,7 @@ export default class MyApp {
           elemMenu.classList.add('menu-selected');
           // Load the selected city
           this.myMap.mapTo(city.center);
-          this.chartService.loadChart(
-            city.datos,
-            city.name,
-            constants.lang[this.currentLang].chartTxt,
-          );
-          this.chartService.showChart();
+
         }
       }
     }
