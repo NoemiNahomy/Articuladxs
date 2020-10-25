@@ -42,10 +42,98 @@ body {
   color: black;
   margin-bottom: 10px;
   margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .card .card-title{
   font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 14px;
 }
+.markerc {
+  display: block;
+  background-image: url('images/colectiva.png');
+  border: none;
+  width: 44px;
+  height: 60px;
+  cursor: pointer;
+  padding: 0;
+
+}
+.markero {
+  display: block;
+  background-image: url('images/ong.png');
+  border: none;
+  width: 44px;
+  height: 60px;
+  cursor: pointer;
+  padding: 0;
+
+}
+
+#type{
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.modal.left .modal-dialog {
+		position: fixed;
+		margin: auto;
+		width: 700px !important;
+		height: 100%;
+    padding-left: 20px;
+		-webkit-transform: translate3d(0%, 0, 0);
+		    -ms-transform: translate3d(0%, 0, 0);
+		     -o-transform: translate3d(0%, 0, 0);
+		        transform: translate3d(0%, 0, 0);
+	}
+
+	.modal.left .modal-content
+	 {
+		height: 100%;
+		overflow-y: auto;
+    border: none !important;
+    border-radius: 0 !important;
+    background-image: url('images/bg.png');
+    background-repeat: repeat;
+	}
+
+	.modal.left .modal-body
+	 {
+		padding: 15px 15px 80px;
+	}
+  .modal.left .modal-header
+   {
+    border-bottom: none !important;
+  }
+
+/*Left*/
+	.modal.left.fade .modal-dialog{
+		left: -320px;
+		-webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+		        transition: opacity 0.3s linear, left 0.3s ease-out;
+	}
+
+	.modal.left.fade.in .modal-dialog{
+		left: 0;
+	}
+.modal-backdrop{
+position: inherit  !important;
+z-index: 1002 !important;
+}
+
+.list-group > li{
+   list-style: none;
+   padding: 5px;
+}
+.list-group > li>i> a{
+  color: black;
+}
+
+
 @media (min-width: 1200px) {
   #panel {
       width: 350px;
@@ -164,15 +252,9 @@ body {
   display: none;
 }
 
-#geochicas-txt{
-  text-align: center;
-  color: #ffff;
-  font-size: 18px;
+#description{
+  font-size: 12px;
 }
-#geochicas-txt > p {
-  margin-bottom: 4px;
-}
-
 .separator{
   border-color: #000;
   border-style: solid;
@@ -240,12 +322,16 @@ body {
 
 
 .menu-selected{
-  font-weight: bold;
-  background-color: rgba(36, 51, 66, 0.4);
-  border-right: 5px solid #00B99E;
-  border-left: 5px solid #00B99E;
-  color: var(--female-color) !important;
+  /* font-weight: bold; */
+  /* background-color: rgba(255,255,255,0.5); */
+  background-color: white;
+
+  color: black !important;
 }
+/* .menu-selected:hover{
+  background-color: white;
+
+} */
 
 #my-toggle-menu{
   color: white !important;

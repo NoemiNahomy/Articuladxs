@@ -13,68 +13,6 @@
 
 <body>
 	<div id="map"></div>
-
-
-	<nav class="navbar navbar-expand-lg my-navbar d-block d-md-none">
-			<button id="my-toggle-menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-
-				<i id="menu-toggle-icon" class="fas fa-chevron-circle-down" aria-hidden="true"></i>
-
-			</button>
-			<a id="menu-title-id" class="navbar-brand" href="#"><span id="menuTitle">Las calles de las mujeres</span></a>
-
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
-					<div class="separator"></div>
-					<div class="my-menu-icon-list"><i class="fas fa-angle-down"></i></div>
-
-				 <div id="menu-list" class="navbar-nav"></div>
-
-				<div class="my-menu-icon-list"><i class="fas fa-angle-up"></i></div>
-				<div class="separator"></div>
-
-				<div class="row menu-info menu-logo-proyecto">
-          <div class="row justify-content-md-center">
-            <div class="col col-lg-2">
-      1 of 3
-    </div>
-    <div class="col-md-auto">
-      Variable width content
-    </div>
-
-							<!-- <div class="col col-sm">
-											<img id="logo-proyecto" src="/images/logo.png"/>
-							</div>
-            	<div class="col col-sm">
-                	<img id="logo-proyecto" src="/images/logo-2.png"/>
-              </div> -->
-          </div>
-				</div>
-
-				<div class="row menu-info menu-text">
-							<div class="col col-sm">
-
-									<!-- <p id="panelDescriptionTextShort">Mapa de las calles con nombre de mujer en ciudades de Latinoamérica y España, para visibilizar la brecha que existe en la representación de figuras femeninas en las ciudades.</p> -->
-							</div>
-				</div>
-
-				<div class="row menu-info menu-footer">
-
-							<!-- <div class="col col-sm">
-											<p id="panelProjectBy2">Un proyecto de</p>
-											<a href="http://warmi.red" target="_blank"><img width="100px" id="logo" src="/images/logo.png"/></a>
-							</div> -->
-
-							<div class="col col-sm">
-											<i class="fab fa-twitter" aria-hidden="true">&nbsp;&nbsp;<a href="https://twitter.com/GeochicasOSM" target="_blank"></i>@GeochicasOSM</a><br>
-									<i class="fab fa-github" aria-hidden="true">&nbsp;&nbsp;<a href="https://github.com/geochicasosm/lascallesdelasmujeres" target="_blank"></i>geochicasosm</a><br>
-							</div>
-
-				</div>
-
-			</div>
-		</nav>
-
 		<div id='panel' class="grid container d-none d-md-block">
       <div class="row menu-logo-proyecto ">
       		<img id="logo-proyecto" src="/images/logo.png"/>
@@ -99,47 +37,78 @@
 
 				<div id="panel-row-list" class="row">
 						<div id="colectivas-list" class="col-sm">
-              <div class="card .text-dark" >
+              <!-- <div class="card text-dark" >
                 <div class="card-body">
                   <div class="row">
                     <div class="col-sm">
-                      <p class="card-title"><b>Colectiva Mujeres Creando</b></p>
+                      <p class="card-title">Colectiva Mujeres Creando</p>
                     </div>
                     <div class="col-sm">
-                      <p class="text-right"><b>COLECTIVA
+                      <p id="type" class="text-right">COLECTIVA
                       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
   <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-</svg></b></p>
+</svg></p>
                     </div>
 
                   </div>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis cursus enim aliquam efficitur. Nam imperdiet gravida purus. </p>
                 </div>
-              </div>
-              <div class="card .text-dark" >
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-sm">
-                      <p class="card-title"><b>Colectiva Mujeres Creando</b></p>
-                    </div>
-                    <div class="col-sm">
-                      <p class="text-right"><b>COLECTIVA
-                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
-  <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-</svg></b></p>
-                    </div>
+              </div> -->
 
-                  </div>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis cursus enim aliquam efficitur. Nam imperdiet gravida purus. </p>
-                </div>
-              </div>
             </div>
 				</div>
         <div class="text-center">
           <a class="btn btn-dark btn-lg btn-add"> Añade a tu colectivx<a/>
         </div>
+
+        <div class="modal left" id="myModal" tabindex="1041" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+              <div class="row">
+                  <div class="col-md-8">
+                    <div class="modal-header">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img class="img-fluid float-left" src='images/nanas.jpg'>
+                          </div>
+                          <div class="col-md-8">
+                            <h3 id="name" class="modal-title" id="myModalLabel">MUJERES CREANDO</h3>
+
+                            <p id="description" class="font-weight-bolder text-justifiy"><span><img class="img-responsive float-left" src="images/colectiva.png"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus dolor velit,a eleifend neque elementum vel.</p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                           <div class="modal-body">
+                             <h4>COLECTIVA</h4>
+                             <p class="text-justify">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                             </p>
+
+                           </div>
+
+                         </div>
+                         <div id="contact" class="col-md-4">
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                           <img class="img-fluid" src="images/logo.png"/>
+                           <h4>CONTÁCTALAS</h4>
+                           <ul class="list-group">
+                            <li class=""><i class="fab fa-facebook"> <a href="">Facebook </a></i></li>
+                            <li class=""><i class="fab fa-instagram"> <a href="">Facebook </a></i></li>
+                            <li class=""><i class="fab fa-twitter"> <a href="">Facebook </a></i></li>
+                            <li class=""><i class="fas fa-laptop"> <a href="">Facebook </a></i></li>
+                            <li class=""><i class="fab fa-whatsapp"> <a href="">Facebook </a></i></li>
+                            <li class=""><i class="fas fa-map-marker-alt"> <a href="">Facebook </a></i></li>
+                          </ul>
+                         </div>
+                       </div>
+            </div><!-- modal-content -->
+          </div><!-- modal-dialog -->
+        </div><!-- modal -->
+
+
 
 	<script src="./index.js"></script>
 	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
