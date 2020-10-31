@@ -70,6 +70,16 @@ body {
   padding: 0;
 
 }
+.markera {
+  display: block;
+  background-image: url('images/asociacion.png');
+  border: none;
+  width: 44px;
+  height: 60px;
+  cursor: pointer;
+  padding: 0;
+
+}
 
 #type{
     font-weight: bold;
@@ -429,11 +439,7 @@ color: #FFFF00;
       display: none;
   }
 
-  #panel-row-geochicas{
-      /* height: 8%; */
-      margin-bottom: 5px;
-      margin-top: 2px;
-  }
+
   #panel-row-list {
       height: 40%;
 
@@ -450,14 +456,7 @@ color: #FFFF00;
       font-size: 12px;
   }
 
-  #geochicas-txt{
-      text-align: center;
-      color: #ffff;
-      font-size: 15px;
-  }
-  #geochicas-txt > p {
-      margin-bottom: 4px;
-  }
+
 
   .separator{
       margin-left: 10px;

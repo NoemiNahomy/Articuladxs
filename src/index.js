@@ -2,7 +2,6 @@
 import './styles.css';
 import './ga';
 import dotenv from 'dotenv';
-// import 'mapbox-gl/dist/mapbox-gl.css';
 import '@fortawesome/fontawesome-free/css/all';
 import 'animate.css';
 

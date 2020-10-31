@@ -8,7 +8,7 @@ export default class MyApp {
   constructor() {
     this.myMap = new MyMap();
 
-    //this.currentLang = this.addText();
+
 
     this.selectedCity = window.location.hash
       ? window.location.hash.replace('#', '')
@@ -16,10 +16,13 @@ export default class MyApp {
 
     this.menuListELem = document.getElementById('menu-list');
     this.panelListELem = document.getElementById('colectivas-list');
+    this.modaldetail =  document.getElementById('myModal');
   }
 
   startApp() {
     this.initDataList();
+
+
   }
 
   initDataList() {
@@ -68,9 +71,12 @@ export default class MyApp {
       // this.menuListELem.appendChild(elemMenuC);
       const el = document.createElement('div');
       el.className = 'markerc';
-      if (collective.type === 'ONG') {
+      if (collective.type === 'Asociación de mujeres') {
         el.className = 'markero';
       }
+      // if (collective.type === 'ONG') {
+      //   el.className = 'markero';
+      // }
       const marker = new mapboxgl.Marker(el)
         .setLngLat(collective.center)
         .addTo(this.myMap.map);
@@ -83,20 +89,263 @@ export default class MyApp {
 
           this.myMap.mapTo(collective.center);
           $('#myModal').modal();
+
+          if  (elemC.id === 'wp'){
+              const colec = constants.collectiveList[0];
+
+              const name =  document.getElementById('name');
+              
+              name.innerText = colec.name;
+              description = document.getElementById('description');
+              description.innerText = colec.description;
+              historyC = document.getElementById('historyC');
+              historyC.innerText = colec.history;
+              type = document.getElementById('type');
+              type.innerText = colec.type;
+              fb = document.getElementById('fb');
+              fb.href = colec.fb;
+              tw = document.getElementById('tw');
+              tw.href = colec.tw;
+              ins = document.getElementById('in');
+              ins.href = colec.in;
+              wsite = document.getElementById('wsite');
+              wsite.href = colec.wsite;
+              phone = document.getElementById('phone');
+              phone.innerHTML = colec.phone;
+              address = document.getElementById('address')
+              address.innerHTML = colec.address;
+
+          };
+        if  (elemC.id === 'wy'){
+            const colec = constants.collectiveList[1];
+            const name =  document.getElementById('name');
+            name.innerText = colec.name;
+            description = document.getElementById('description');
+            description.innerText = colec.description;
+            historyC = document.getElementById('historyC');
+            historyC.innerText = colec.history;
+            type = document.getElementById('type');
+            type.innerText = colec.type;
+            fb = document.getElementById('fb');
+            fb.href = colec.fb;
+            tw = document.getElementById('tw');
+            tw.href = colec.tw;
+            ins = document.getElementById('in');
+            ins.href = colec.in;
+            wsite = document.getElementById('wsite');
+            wsite.href = colec.wsite;
+            phone = document.getElementById('phone');
+            phone.innerHTML = colec.phone;
+            address = document.getElementById('address')
+            address.innerHTML = colec.address;
+
+        };
+        if  (elemC.id === 'wn'){
+            const colec = constants.collectiveList[2];
+            const name =  document.getElementById('name');
+
+            name.innerText = colec.name;
+            description = document.getElementById('description');
+            description.innerText = colec.description;
+            historyC = document.getElementById('historyC');
+            historyC.innerText = colec.history;
+            type = document.getElementById('type');
+            type.innerText = colec.type;
+            fb = document.getElementById('fb');
+            fb.href = colec.fb;
+            tw = document.getElementById('tw');
+            tw.href = colec.tw;
+            ins = document.getElementById('in');
+            ins.href = colec.in;
+            wsite = document.getElementById('wsite');
+            wsite.href = colec.wsite;
+            phone = document.getElementById('phone');
+            phone.innerHTML = colec.phone;
+            address = document.getElementById('address')
+            address.innerHTML = colec.address;
+
+        };
+        if  (elemC.id === 'iva'){
+            const colec = constants.collectiveList[3];
+            const name =  document.getElementById('name');
+            name.innerText = colec.name;
+            description = document.getElementById('description');
+            description.innerText = colec.description;
+            historyC = document.getElementById('historyC');
+            historyC.innerText = colec.history;
+            type = document.getElementById('type');
+            type.innerText = colec.type;
+            fb = document.getElementById('fb');
+            fb.href = colec.fb;
+            tw = document.getElementById('tw');
+            tw.href = colec.tw;
+            ins = document.getElementById('in');
+            ins.href = colec.in;
+            wsite = document.getElementById('wsite');
+            wsite.href = colec.wsite;
+            phone = document.getElementById('phone');
+            phone.innerHTML = colec.phone;
+            address = document.getElementById('address')
+            address.innerHTML = colec.address;
+
+        };
+        if  (elemC.id === 'gt'){
+            const colec = constants.collectiveList[4];
+
+            const name =  document.getElementById('name');
+            name.innerText = colec.name;
+            description = document.getElementById('description');
+            description.innerText = colec.description;
+            historyC = document.getElementById('historyC');
+            historyC.innerText = colec.history;
+            type = document.getElementById('type');
+            type.innerText = colec.type;
+            fb = document.getElementById('fb');
+            fb.href = colec.fb;
+            tw = document.getElementById('tw');
+            tw.href = colec.tw;
+            ins = document.getElementById('in');
+            ins.href = colec.in;
+            wsite = document.getElementById('wsite');
+            wsite.href = colec.wsite;
+            phone = document.getElementById('phone');
+            phone.innerHTML = colec.phone;
+            address = document.getElementById('address')
+            address.innerHTML = colec.address;
+
+        };
+        if  (elemC.id === 'cn'){
+            const colec = constants.collectiveList[5];
+
+            const name =  document.getElementById('name');
+
+            name.innerText = colec.name;
+            description = document.getElementById('description');
+            description.innerText = colec.description;
+            historyC = document.getElementById('historyC');
+            historyC.innerText = colec.history;
+            type = document.getElementById('type');
+            type.innerText = colec.type;
+            fb = document.getElementById('fb');
+            fb.href = colec.fb;
+            tw = document.getElementById('tw');
+            tw.href = colec.tw;
+            ins = document.getElementById('in');
+            ins.href = colec.in;
+            wsite = document.getElementById('wsite');
+            wsite.href = colec.wsite;
+            phone = document.getElementById('phone');
+            phone.innerHTML = colec.phone;
+            address = document.getElementById('address')
+            address.innerHTML = colec.address;
+
+        };
+        if  (elemC.id === 'wmp'){
+            const colec = constants.collectiveList[6];
+
+            const name =  document.getElementById('name');
+
+            name.innerText = colec.name;
+            description = document.getElementById('description');
+            description.innerText = colec.description;
+            historyC = document.getElementById('historyC');
+            historyC.innerText = colec.history;
+            type = document.getElementById('type');
+            type.innerText = colec.type;
+            fb = document.getElementById('fb');
+            fb.href = colec.fb;
+            tw = document.getElementById('tw');
+            tw.href = colec.tw;
+            ins = document.getElementById('in');
+            ins.href = colec.in;
+            wsite = document.getElementById('wsite');
+            wsite.href = colec.wsite;
+            phone = document.getElementById('phone');
+            phone.innerHTML = colec.phone;
+            address = document.getElementById('address')
+            address.innerHTML = colec.address;
+
+        };
+        if  (elemC.id === 'jr'){
+            const colec = constants.collectiveList[7];
+
+            const name =  document.getElementById('name');
+
+            name.innerText = colec.name;
+            description = document.getElementById('description');
+            description.innerText = colec.description;
+            historyC = document.getElementById('historyC');
+            historyC.innerText = colec.history;
+            type = document.getElementById('type');
+            type.innerText = colec.type;
+            fb = document.getElementById('fb');
+            fb.href = colec.fb;
+            tw = document.getElementById('tw');
+            tw.href = colec.tw;
+            ins = document.getElementById('in');
+            ins.href = colec.in;
+            wsite = document.getElementById('wsite');
+            wsite.href = colec.wsite;
+            phone = document.getElementById('phone');
+            phone.innerHTML = colec.phone;
+            address = document.getElementById('address')
+            address.innerHTML = colec.address;
+
+        };
+        if  (elemC.id === 'fc'){
+            const colec = constants.collectiveList[8];
+
+            const name =  document.getElementById('name');
+
+            name.innerText = colec.name;
+            description = document.getElementById('description');
+            description.innerText = colec.description;
+            historyC = document.getElementById('historyC');
+            historyC.innerText = colec.history;
+            type = document.getElementById('type');
+            type.innerText = colec.type;
+            fb = document.getElementById('fb');
+            fb.href = colec.fb;
+            tw = document.getElementById('tw');
+            tw.href = colec.tw;
+            ins = document.getElementById('in');
+            ins.href = colec.in;
+            wsite = document.getElementById('wsite');
+            wsite.href = colec.wsite;
+            phone = document.getElementById('phone');
+            phone.innerHTML = colec.phone;
+            address = document.getElementById('address')
+            address.innerHTML = colec.address;
+
         };
 
-      // Create an HTML node for every city and load its data
-      // for (let i = 0; i < collective.networks.length; i++) {
-      //   const network = collective.networks[i];
-      //   // this.myMap.map.on(
-      //   //   'load',
-      //   //   GeojsonService.loadGeojson(
-      //   //     this.myMap.map,
-      //   //   ),
-      //   // );
-      //
-      //
-      // }
+        if  (elemC.id === 'mb'){
+            const colec = constants.collectiveList[9];
+
+            const name =  document.getElementById('name');
+
+            name.innerText = colec.name;
+            description = document.getElementById('description');
+            description.innerText = colec.description;
+            historyC = document.getElementById('historyC');
+            historyC.innerText = colec.history;
+            type = document.getElementById('type');
+            type.innerText = colec.type;
+            fb = document.getElementById('fb');
+            fb.href = colec.fb;
+            tw = document.getElementById('tw');
+            tw.href = colec.tw;
+            ins = document.getElementById('in');
+            ins.href = colec.in;
+            wsite = document.getElementById('wsite');
+            wsite.href = colec.wsite;
+            phone = document.getElementById('phone');
+            phone.innerHTML = colec.phone;
+            address = document.getElementById('address')
+            address.innerHTML = colec.address;
+        };
+      }
     }
   }
+
 }

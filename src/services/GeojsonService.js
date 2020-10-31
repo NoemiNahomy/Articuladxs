@@ -1,22 +1,9 @@
-// import {
-//   framesPerSecond,
-//   initialOpacity,
-//   initialRadius,
-//   maxRadius,
-//   // FEMALE,
-//   // URL_DATA,
-//   // SOURCE_TYPES_LIST,
-// } from './Constants';
 
 export default class GeojsonMapService {
   static loadGeojson(map, folder, isMobile, coords, lang, popupText) {
     this.addGeojsonSource.bind(this, map, isMobile, lang,
       popupText, coords, folder);
-    // fetch(`${URL_DATA}/data/${folder}/final_tile.geojson`)
-    //   .then((res) => res.json())
-    //   .then(
-    //
-    //   );
+  
   }
 
   static loadGeojsonTiles(map, tilecount, folder) {
